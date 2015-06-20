@@ -12,6 +12,12 @@ int consulta(FILE *fp, int numero);
 int probabilidade(FILE *fp);
 int imprime_dados(FILE *fp, char *nome);
 
+struct dados{
+	int num_controle;
+	char local[40];
+	char tipo[20];
+};
+
 int main(int argc, char **argv){
 
 }
