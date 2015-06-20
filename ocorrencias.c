@@ -10,7 +10,7 @@ int validacaoInteiro(char *str);
 int registro(FILE *fp, int numero, char *local, char *tipo);
 int consulta(FILE *fp, int numero);
 int probabilidade(FILE *fp);
-int print_dados(FILE *fp, char *nome);
+int imprime_dados(FILE *fp, char *nome);
 
 int main(int argc, char **argv){
 
@@ -39,5 +39,5 @@ int probabilidade(FILE *fp){
 	
 }
 
-float print_dados(FILE *fp, char *local){
+float imprime_dados(FILE *fp, char *local){
 }
