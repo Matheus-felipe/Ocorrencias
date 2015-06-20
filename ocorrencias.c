@@ -13,9 +13,6 @@ int print_dados(FILE *fp, char *nome);
 
 int main(int argc, char **argv){
 
-	FILE *fp;
-	fp = fopen("dados", "wb");
-
 }
 
 int validacaoInteiro(char *str){
