@@ -21,7 +21,7 @@ void consulta(FILE *fp, int numero, struct Dados *ocorrencias);
 int num_registros(FILE *fp);
 int city_ocorrencias(FILE *fp, char *cidade);
 float probabilidade(FILE *fp, char *cidade);
-void imprime_dados(FILE *fp, char *str);
+void imprime_dados(FILE *fp, char *cidade);
 	
 int main(int argc, char **argv){
 
@@ -140,13 +140,13 @@ float probabilidade(FILE *fp, char *cidade){
 	
 } 
 
-void imprime_dados(FILE *fp, char *str){
+void imprime_dados(FILE *fp, char *cidade){
 	
 	printf("Total de ocorrencias registradas: %d\n", num_registros(fp));
 	
-	if(strcmp(str, "none") != 0){
-		printf("%s teve %d ocorrencias. \n", str, city_ocorrencias(fp,str));
-		printf("Essa cidade possui %.2f %% de chance para que ocorra outra ocorrencia.\n", probabilidade(fp,str));
+	if(strcmp(cidade, "none") != 0){
+		printf("%s teve %d ocorrencias. \n", cidade, city_ocorrencias(fp,cidade));
+		printf("Essa cidade possui %.2f %% de chance para que ocorra outra ocorrencia.\n", probabilidade(fp,cidade));
 	}
 	
 }
